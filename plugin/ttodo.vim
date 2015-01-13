@@ -36,9 +36,9 @@ function! s:todo_exit_move_mode()
 endfunction
 
 function! s:todo_syntax()
-	highlight TodoDone guifg=darkgray
-	highlight TodoDisabled guifg=gray
-	highlight TodoNormal guifg=lightgreen
+	highlight link TodoDone Statement
+	highlight link TodoDisabled Statement
+	highlight link TodoNormal Identifier
 	highlight TodoSeparator guifg=#777777
 	highlight link TodoDoing Todo
 	highlight link TodoDetail Comment
